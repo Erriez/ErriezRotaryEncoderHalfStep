@@ -55,18 +55,18 @@
 #define RHS_CCW_BEGIN_M   0x05
 
 static const PROGMEM uint8_t halfStepTable[6][4] = {
-  // RHS_START (00)
-  {RHS_START_M,           RHS_CW_BEGIN,     RHS_CCW_BEGIN,    RHS_START},
-  // RHS_CCW_BEGIN
-  {RHS_START_M | DIR_CCW, RHS_START,        RHS_CCW_BEGIN,    RHS_START},
-  // RHS_CW_BEGIN
-  {RHS_START_M | DIR_CW,  RHS_CW_BEGIN,     RHS_START,        RHS_START},
-  // RHS_START_M (11)
-  {RHS_START_M,           RHS_CCW_BEGIN_M,  RHS_CW_BEGIN_M,   RHS_START},
-  // RHS_CW_BEGIN_M
-  {RHS_START_M,           RHS_START_M,      RHS_CW_BEGIN_M,   RHS_START | DIR_CW},
-  // RHS_CCW_BEGIN_M
-  {RHS_START_M,           RHS_CCW_BEGIN_M,  RHS_START_M,      RHS_START | DIR_CCW},
+    // RHS_START (00)
+    {RHS_START_M,           RHS_CW_BEGIN,     RHS_CCW_BEGIN,    RHS_START},
+    // RHS_CCW_BEGIN
+    {RHS_START_M | DIR_CCW, RHS_START,        RHS_CCW_BEGIN,    RHS_START},
+    // RHS_CW_BEGIN
+    {RHS_START_M | DIR_CW,  RHS_CW_BEGIN,     RHS_START,        RHS_START},
+    // RHS_START_M (11)
+    {RHS_START_M,           RHS_CCW_BEGIN_M,  RHS_CW_BEGIN_M,   RHS_START},
+    // RHS_CW_BEGIN_M
+    {RHS_START_M,           RHS_START_M,      RHS_CW_BEGIN_M,   RHS_START | DIR_CW},
+    // RHS_CCW_BEGIN_M
+    {RHS_START_M,           RHS_CCW_BEGIN_M,  RHS_START_M,      RHS_START | DIR_CCW},
 };
 
 /*!
@@ -85,15 +85,14 @@ static const PROGMEM uint8_t halfStepTable[6][4] = {
  *     sensitive or will disable speed detection.
  *     Default is 100.
  */
-RotaryHalfStep::RotaryHalfStep(uint8_t pin1, uint8_t pin2, bool pullUp,
-               uint8_t sensitivity) :
-  _pin1(pin1), _pin2(pin2), _state(0), _sensitivity(sensitivity)
+RotaryHalfStep::RotaryHalfStep(uint8_t pin1, uint8_t pin2, bool pullUp, uint8_t sensitivity) :
+    _pin1(pin1), _pin2(pin2), _state(0), _sensitivity(sensitivity)
 {
-  if (pullUp) {
-    // Enable internal pull-up
-    pinMode(_pin1, INPUT_PULLUP);
-    pinMode(_pin2, INPUT_PULLUP);
-  }
+    if (pullUp) {
+        // Enable internal pull-up
+        pinMode(_pin1, INPUT_PULLUP);
+        pinMode(_pin2, INPUT_PULLUP);
+    }
 }
 
 /*!
@@ -119,45 +118,45 @@ RotaryHalfStep::RotaryHalfStep(uint8_t pin1, uint8_t pin2, bool pullUp,
  */
 int RotaryHalfStep::read()
 {
-  int pinState;
-  int rotaryState;
-  unsigned long timeStamp;
-  unsigned long changeTime;
+    int pinState;
+    int rotaryState;
+    unsigned long timeStamp;
+    unsigned long changeTime;
 
-  // Sample rotary digital pins
-  pinState = (digitalRead(_pin1) << 1) | digitalRead(_pin2);
+    // Sample rotary digital pins
+    pinState = (digitalRead(_pin1) << 1) | digitalRead(_pin2);
 
-  // Determine new state from the pins and state table.
-  _state = pgm_read_byte(&halfStepTable[_state & 0x0f][pinState]);
+    // Determine new state from the pins and state table.
+    _state = pgm_read_byte(&halfStepTable[_state & 0x0f][pinState]);
 
-  // Check rotary state
-  switch (_state & 0x30) {
-    case DIR_CW:
-      rotaryState = 1;
-      break;
-    case DIR_CCW:
-      rotaryState = -1;
-      break;
-    case DIR_NONE:
-    default:
-      rotaryState = 0;
-  }
-
-  // Check if rotary changed
-  if (rotaryState != 0) {
-    timeStamp = millis();
-    changeTime = timeStamp - _lastChange;
-    _lastChange = timeStamp;
-
-    // Check speed change
-    if (changeTime < (_sensitivity / 2)) {
-      rotaryState *= 3;
-    } else if (changeTime < _sensitivity) {
-      rotaryState *= 2;
+    // Check rotary state
+    switch (_state & 0x30) {
+        case DIR_CW:
+            rotaryState = 1;
+            break;
+        case DIR_CCW:
+            rotaryState = -1;
+            break;
+        case DIR_NONE:
+        default:
+            rotaryState = 0;
     }
-  }
 
-  return rotaryState;
+    // Check if rotary changed
+    if (rotaryState != 0) {
+        timeStamp = millis();
+        changeTime = timeStamp - _lastChange;
+        _lastChange = timeStamp;
+
+        // Check speed change
+        if (changeTime < (_sensitivity / 2)) {
+            rotaryState *= 3;
+        } else if (changeTime < _sensitivity) {
+            rotaryState *= 2;
+        }
+    }
+
+    return rotaryState;
 }
 
 /*!
@@ -168,7 +167,7 @@ int RotaryHalfStep::read()
  */
 void RotaryHalfStep::setSensitivity(uint8_t sensitivity)
 {
-  _sensitivity = sensitivity;
+    _sensitivity = sensitivity;
 }
 
 /*!
@@ -179,5 +178,5 @@ void RotaryHalfStep::setSensitivity(uint8_t sensitivity)
  */
 uint8_t RotaryHalfStep::getSensitivity()
 {
-  return _sensitivity;
+    return _sensitivity;
 }
