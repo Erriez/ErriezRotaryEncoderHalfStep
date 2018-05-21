@@ -39,20 +39,17 @@
 
 #include "RotaryHalfStep.h"
 
-// No complete step yet
-#define DIR_NONE  0x00
-// Clockwise step
-#define DIR_CW    0x10
-// Counter-clockwise step
-#define DIR_CCW   0x20
+#define DIR_NONE  0x00      //!< No complete step yet
+#define DIR_CW    0x10      //!< Clockwise step
+#define DIR_CCW   0x20      //!< Counter-clockwise step
 
 // Use the half-step state table (emits a code at 00 and 11)
-#define RHS_START         0x00
-#define RHS_CCW_BEGIN     0x01
-#define RHS_CW_BEGIN      0x02
-#define RHS_START_M       0x03
-#define RHS_CW_BEGIN_M    0x04
-#define RHS_CCW_BEGIN_M   0x05
+#define RHS_START         0x00     //!< Rotary half step start
+#define RHS_CCW_BEGIN     0x01     //!< Rotary half step counter clock wise begin
+#define RHS_CW_BEGIN      0x02     //!< Rotary half step clock wise begin
+#define RHS_START_M       0x03     //!< Rotary half step start
+#define RHS_CW_BEGIN_M    0x04     //!< Rotary half step clock wise begin
+#define RHS_CCW_BEGIN_M   0x05     //!< Rotary half step counter clock wise begin
 
 static const PROGMEM uint8_t halfStepTable[6][4] = {
     // RHS_START (00)
