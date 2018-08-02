@@ -23,7 +23,8 @@
  */
 
 /* Basic example half step Rotary Encoder with interrupts
- * Source: https://github.com/Erriez/ErriezRotaryEncoderHalfStep
+ * Source:         https://github.com/Erriez/ErriezRotaryEncoderHalfStep
+ * Documentation:  https://erriez.github.io/ErriezRotaryEncoderHalfStep
  */
 
 #include <Arduino.h>

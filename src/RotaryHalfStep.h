@@ -23,12 +23,11 @@
  */
 
 /*!
- * \file
- *     RotaryHalfStep.h
- * \brief
- *     Three speed half step Rotary Encoder library for Arduino
+ * \file RotaryHalfStep.h
+ * \brief Three speed half step Rotary Encoder library for Arduino
  * \details
- *     Source: https://github.com/Erriez/ErriezRotaryEncoderHalfStep
+ *      Source:         https://github.com/Erriez/ErriezRotaryEncoderHalfStep
+ *      Documentation:  https://erriez.github.io/ErriezRotaryEncoderHalfStep
  */
 
 #ifndef ROTARY_FULL_STEP_H__

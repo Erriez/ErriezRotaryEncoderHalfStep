@@ -23,7 +23,8 @@
  */
 
 /* Counter example polled half step Rotary Encoder
- * Source: https://github.com/Erriez/ErriezRotaryEncoderHalfStep
+ * Source:         https://github.com/Erriez/ErriezRotaryEncoderHalfStep
+ * Documentation:  https://erriez.github.io/ErriezRotaryEncoderHalfStep
  */
 
 #include <Arduino.h>

@@ -23,7 +23,8 @@
  */
 
 /* Polled Half Step Rotary Encoder basic example
- * Source: https://github.com/Erriez/ErriezRotaryEncoderHalfStep
+ * Source:         https://github.com/Erriez/ErriezRotaryEncoderHalfStep
+ * Documentation:  https://erriez.github.io/ErriezRotaryEncoderHalfStep
  */
 
 #include <Arduino.h>

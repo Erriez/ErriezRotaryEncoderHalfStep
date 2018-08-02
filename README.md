@@ -22,7 +22,6 @@ Please refer to the [ErriezRotaryEncoderFullStep](https://github.com/Erriez/Erri
 Experiment with the full step and half step libraries which works optimal for your Rotary Encoder.
 
 
-
 ## Hardware
 
 Connect the two rotary pins to the DIGITAL pins of an Arduino board.
@@ -40,11 +39,9 @@ Tested with Arduino IDE v1.8.5 on hardware:
 * WeMos D1 R2 & mini (ESP8266)
 
 
-
 ### Interrupts
 
 Both rotary pins must be connected to a DIGITAL pin with interrupt support, such as `INT0` or `INT1`. This is chip specific. Please refer to the documentation of your board or [attachInterrupt()](https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/).
-
 
 
 ### Arduino UNO hardware
@@ -59,7 +56,6 @@ The connection below can be used for polled and interrupts. An optional button p
 |         2         |           DIGITAL pin 3 (INT1)           |
 | Button (optional) |              DIGITAL pin 4               |
 |        GND        |                   GND                    |
-
 
 
 ### Arduino WeMos D1 R2 & mini (ESP8266) hardware
@@ -84,7 +80,6 @@ Note that some ESP8266 pins mixes ESP8622 GPIO pins with Arduino digital pins. C
 ```
 
 
-
 ## Examples
 
 The following examples are available:
@@ -97,6 +92,10 @@ The following examples are available:
 * Rotary | Polled | [PolledHalfStepMultiple](https://github.com/Erriez/ErriezRotary/blob/master/examples/Polled/PolledHalfStepMultiple/PolledHalfStepMultiple.ino)
 
 
+## Documentation
+
+- [Doxygen online HTML](https://Erriez.github.io/ErriezRotaryEncoderHalfStep)
+- [Doxygen PDF](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/raw/gh-pages/latex/ErriezRotaryEncoderHalfStep.pdf)
 
 
 ## Usage
@@ -191,16 +190,13 @@ void rotaryInterrupt()
 
 ## Library dependencies
 
-- No other libraries are used.
+- None.
 
-## Documentation
-
-- [Doxygen online HTML](https://Erriez.github.io/ErriezRotaryEncoderFullStep)
-- [Doxygen PDF](https://github.com/Erriez/ErriezRotaryEncoderFullStep/raw/master/docs/latex/refman.pdf)
 
 ## Library installation
 
 Please refer to the [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) page.
+
 
 ## Other Arduino Libraries and Sketches from Erriez
 
