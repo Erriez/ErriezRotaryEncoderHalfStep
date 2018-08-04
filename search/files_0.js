@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rotaryhalfstep_2ecpp',['RotaryHalfStep.cpp',['../_rotary_half_step_8cpp.html',1,'']]],
-  ['rotaryhalfstep_2eh',['RotaryHalfStep.h',['../_rotary_half_step_8h.html',1,'']]]
+  ['erriezrotaryhalfstep_2ecpp',['ErriezRotaryHalfStep.cpp',['../_erriez_rotary_half_step_8cpp.html',1,'']]],
+  ['erriezrotaryhalfstep_2eh',['ErriezRotaryHalfStep.h',['../_erriez_rotary_half_step_8h.html',1,'']]]
 ];

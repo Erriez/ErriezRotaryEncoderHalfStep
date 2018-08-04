@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Erriez Half step Rotary Encoder: RotaryHalfStep.cpp File Reference</title>
+<title>Erriez Half step Rotary Encoder: ErriezRotaryHalfStep.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,53 +90,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">RotaryHalfStep.cpp File Reference</div>  </div>
+<div class="title">ErriezRotaryHalfStep.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Three speed half step Rotary Encoder library for Arduino.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;pgmspace.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="_rotary_half_step_8h_source.html">RotaryHalfStep.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_erriez_rotary_half_step_8h_source.html">ErriezRotaryHalfStep.h</a>&quot;</code><br />
 </div>
-<p><a href="_rotary_half_step_8cpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="_erriez_rotary_half_step_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a665390e734d124195aa8d263d475c73a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a665390e734d124195aa8d263d475c73a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotary_half_step_8cpp.html#a665390e734d124195aa8d263d475c73a">DIR_NONE</a>&#160;&#160;&#160;0x00</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_erriez_rotary_half_step_8cpp.html#a665390e734d124195aa8d263d475c73a">DIR_NONE</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="memdesc:a665390e734d124195aa8d263d475c73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">No complete step yet. <br /></td></tr>
 <tr class="separator:a665390e734d124195aa8d263d475c73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32aebb0062f8833d08b204b072721245"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32aebb0062f8833d08b204b072721245"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotary_half_step_8cpp.html#a32aebb0062f8833d08b204b072721245">DIR_CW</a>&#160;&#160;&#160;0x10</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_erriez_rotary_half_step_8cpp.html#a32aebb0062f8833d08b204b072721245">DIR_CW</a>&#160;&#160;&#160;0x10</td></tr>
 <tr class="memdesc:a32aebb0062f8833d08b204b072721245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clockwise step. <br /></td></tr>
 <tr class="separator:a32aebb0062f8833d08b204b072721245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4cfbbc36469e74e77804b0c3c9d0ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d4cfbbc36469e74e77804b0c3c9d0ba"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotary_half_step_8cpp.html#a6d4cfbbc36469e74e77804b0c3c9d0ba">DIR_CCW</a>&#160;&#160;&#160;0x20</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_erriez_rotary_half_step_8cpp.html#a6d4cfbbc36469e74e77804b0c3c9d0ba">DIR_CCW</a>&#160;&#160;&#160;0x20</td></tr>
 <tr class="memdesc:a6d4cfbbc36469e74e77804b0c3c9d0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter-clockwise step. <br /></td></tr>
 <tr class="separator:a6d4cfbbc36469e74e77804b0c3c9d0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7420036f8329851d2f09b53e57f6209c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7420036f8329851d2f09b53e57f6209c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotary_half_step_8cpp.html#a7420036f8329851d2f09b53e57f6209c">RHS_START</a>&#160;&#160;&#160;0x00</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_erriez_rotary_half_step_8cpp.html#a7420036f8329851d2f09b53e57f6209c">RHS_START</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="memdesc:a7420036f8329851d2f09b53e57f6209c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotary half step start. <br /></td></tr>
 <tr class="separator:a7420036f8329851d2f09b53e57f6209c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55de50efcaac52cef69247de7d81fc7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55de50efcaac52cef69247de7d81fc7d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotary_half_step_8cpp.html#a55de50efcaac52cef69247de7d81fc7d">RHS_CCW_BEGIN</a>&#160;&#160;&#160;0x01</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_erriez_rotary_half_step_8cpp.html#a55de50efcaac52cef69247de7d81fc7d">RHS_CCW_BEGIN</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="memdesc:a55de50efcaac52cef69247de7d81fc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotary half step counter clock wise begin. <br /></td></tr>
 <tr class="separator:a55de50efcaac52cef69247de7d81fc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07acf1ce63ccc6eab74276ee126efecd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07acf1ce63ccc6eab74276ee126efecd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotary_half_step_8cpp.html#a07acf1ce63ccc6eab74276ee126efecd">RHS_CW_BEGIN</a>&#160;&#160;&#160;0x02</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_erriez_rotary_half_step_8cpp.html#a07acf1ce63ccc6eab74276ee126efecd">RHS_CW_BEGIN</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="memdesc:a07acf1ce63ccc6eab74276ee126efecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotary half step clock wise begin. <br /></td></tr>
 <tr class="separator:a07acf1ce63ccc6eab74276ee126efecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af96251e5d8c5d854291aceeb1eb891"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8af96251e5d8c5d854291aceeb1eb891"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotary_half_step_8cpp.html#a8af96251e5d8c5d854291aceeb1eb891">RHS_START_M</a>&#160;&#160;&#160;0x03</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_erriez_rotary_half_step_8cpp.html#a8af96251e5d8c5d854291aceeb1eb891">RHS_START_M</a>&#160;&#160;&#160;0x03</td></tr>
 <tr class="memdesc:a8af96251e5d8c5d854291aceeb1eb891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotary half step start. <br /></td></tr>
 <tr class="separator:a8af96251e5d8c5d854291aceeb1eb891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2091deb5bf939992845fa66a380df2f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2091deb5bf939992845fa66a380df2f7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotary_half_step_8cpp.html#a2091deb5bf939992845fa66a380df2f7">RHS_CW_BEGIN_M</a>&#160;&#160;&#160;0x04</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_erriez_rotary_half_step_8cpp.html#a2091deb5bf939992845fa66a380df2f7">RHS_CW_BEGIN_M</a>&#160;&#160;&#160;0x04</td></tr>
 <tr class="memdesc:a2091deb5bf939992845fa66a380df2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotary half step clock wise begin. <br /></td></tr>
 <tr class="separator:a2091deb5bf939992845fa66a380df2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad74f05d9e3663cc1100921d222c6f930"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad74f05d9e3663cc1100921d222c6f930"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rotary_half_step_8cpp.html#ad74f05d9e3663cc1100921d222c6f930">RHS_CCW_BEGIN_M</a>&#160;&#160;&#160;0x05</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_erriez_rotary_half_step_8cpp.html#ad74f05d9e3663cc1100921d222c6f930">RHS_CCW_BEGIN_M</a>&#160;&#160;&#160;0x05</td></tr>
 <tr class="memdesc:ad74f05d9e3663cc1100921d222c6f930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotary half step counter clock wise begin. <br /></td></tr>
 <tr class="separator:ad74f05d9e3663cc1100921d222c6f930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -144,7 +144,7 @@ Macros</h2></td></tr>
 <div class="textblock"><p>Three speed half step Rotary Encoder library for Arduino. </p>
 <p>Source: <a href="https://github.com/Erriez/ErriezRotaryEncoderHalfStep">https://github.com/Erriez/ErriezRotaryEncoderHalfStep</a> Documentation: <a href="https://erriez.github.io/ErriezRotaryEncoderHalfStep">https://erriez.github.io/ErriezRotaryEncoderHalfStep</a> </p>
 
-<p>Definition in file <a class="el" href="_rotary_half_step_8cpp_source.html">RotaryHalfStep.cpp</a>.</p>
+<p>Definition in file <a class="el" href="_erriez_rotary_half_step_8cpp_source.html">ErriezRotaryHalfStep.cpp</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

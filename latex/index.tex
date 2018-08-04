@@ -125,37 +125,38 @@ The following examples are available\+:
 {\bfseries Read rotary with polling} 
 \begin{DoxyCode}
 1 \{c++\}
-2 #include <RotaryHalfStep.h>
+2 #include <ErriezRotaryHalfStep.h>
 3 
-4 // Connect rotary pins to the DIGITAL pins of the Arduino board
-5 #define ROTARY\_PIN1   2
-6 #define ROTARY\_PIN2   3
-7 
-8 // Enable ONE of the three constructors below with different number of arguments:
-9 
-10 // Initialize half step rotary encoder, default pull-up enabled, default 
-11 // sensitive=100
-12 RotaryHalfStep rotary(ROTARY\_PIN1, ROTARY\_PIN2);
-13 
-14 // Or initialize half step rotary encoder, pull-up disabled, default sensitive=100
-15 // RotaryHalfStep rotary(ROTARY\_PIN1, ROTARY\_PIN2, false);
-16 
-17 // Or initialize half step rotary encoder, pull-up enabled, sensitive 1..255
-18 // A higher value is more sensitive
-19 // RotaryHalfStep rotary(ROTARY\_PIN1, ROTARY\_PIN2, true, 150);
-20 
-21 void loop()
-22 \{
-23   int rotaryState = rotary.read();
-24 
-25   // rotaryState = -3: Counter clockwise turn, multiple notches fast
-26   // rotaryState = -2: Counter clockwise turn, multiple notches
-27   // rotaryState = -1: Counter clockwise turn, single notch
-28   // rotaryState = 0:  No change
-29   // rotaryState = 1:  Clockwise turn, single notch
-30   // rotaryState = 2:  Clockwise turn, multiple notches
-31   // rotaryState = 3:  Clockwise turn, multiple notches fast
-32 \}
+4 
+5 // Connect rotary pins to the DIGITAL pins of the Arduino board
+6 #define ROTARY\_PIN1   2
+7 #define ROTARY\_PIN2   3
+8 
+9 // Enable ONE of the three constructors below with different number of arguments:
+10 
+11 // Initialize half step rotary encoder, default pull-up enabled, default 
+12 // sensitive=100
+13 RotaryHalfStep rotary(ROTARY\_PIN1, ROTARY\_PIN2);
+14 
+15 // Or initialize half step rotary encoder, pull-up disabled, default sensitive=100
+16 // RotaryHalfStep rotary(ROTARY\_PIN1, ROTARY\_PIN2, false);
+17 
+18 // Or initialize half step rotary encoder, pull-up enabled, sensitive 1..255
+19 // A higher value is more sensitive
+20 // RotaryHalfStep rotary(ROTARY\_PIN1, ROTARY\_PIN2, true, 150);
+21 
+22 void loop()
+23 \{
+24   int rotaryState = rotary.read();
+25 
+26   // rotaryState = -3: Counter clockwise turn, multiple notches fast
+27   // rotaryState = -2: Counter clockwise turn, multiple notches
+28   // rotaryState = -1: Counter clockwise turn, single notch
+29   // rotaryState = 0:  No change
+30   // rotaryState = 1:  Clockwise turn, single notch
+31   // rotaryState = 2:  Clockwise turn, multiple notches
+32   // rotaryState = 3:  Clockwise turn, multiple notches fast
+33 \}
 \end{DoxyCode}
 
 
@@ -164,7 +165,7 @@ The following examples are available\+:
 
 \begin{DoxyCode}
 1 \{c++\}
-2 #include <RotaryHalfStep.h>
+2 #include <ErriezRotaryHalfStep.h>
 3 
 4 // Connect rotary pins to Arduino DIGITAL pins with interrupt support:
 5 //
