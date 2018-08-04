@@ -23,7 +23,7 @@
  */
 
 /*!
- * \file RotaryHalfStep.cpp
+ * \file ErriezRotaryHalfStep.cpp
  * \brief Three speed half step Rotary Encoder library for Arduino.
  * \details
  *      Source:         https://github.com/Erriez/ErriezRotaryEncoderHalfStep
@@ -36,7 +36,7 @@
 #include <pgmspace.h>
 #endif
 
-#include "RotaryHalfStep.h"
+#include "ErriezRotaryHalfStep.h"
 
 #define DIR_NONE  0x00      //!< No complete step yet
 #define DIR_CW    0x10      //!< Clockwise step
