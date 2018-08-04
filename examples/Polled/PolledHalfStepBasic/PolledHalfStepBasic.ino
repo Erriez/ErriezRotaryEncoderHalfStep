@@ -27,7 +27,6 @@
  * Documentation:  https://erriez.github.io/ErriezRotaryEncoderHalfStep
  */
 
-#include <Arduino.h>
 #include <ErriezRotaryHalfStep.h>
 
 // Connect rotary pins to the DIGITAL or ANALOG pins of the Arduino board
