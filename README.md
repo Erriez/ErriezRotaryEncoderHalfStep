@@ -95,7 +95,7 @@ The following examples are available:
 ## Documentation
 
 - [Doxygen online HTML](https://Erriez.github.io/ErriezRotaryEncoderHalfStep)
-- [Doxygen PDF](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/raw/gh-pages/latex/ErriezRotaryEncoderHalfStep.pdf)
+- [Doxygen PDF](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/raw/master/ErriezRotaryEncoderHalfStep.pdf)
 
 
 ## Usage
