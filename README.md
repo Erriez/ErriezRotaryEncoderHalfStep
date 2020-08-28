@@ -48,7 +48,7 @@ Both rotary pins must be connected to a DIGITAL pin with interrupt support, such
 
 The connection below can be used for polled and interrupts. An optional button pin can be connected to DIGITAL pin 4.
 
-![alt text](https://raw.githubusercontent.com/Erriez/ErriezRotaryEncoderHalfStep/master/extras/FritzingRotary.png "3-pin Rotary Encoder Arduino connection")
+![3-pin Rotary Encoder Arduino connection](https://raw.githubusercontent.com/Erriez/ErriezRotaryEncoderHalfStep/master/extras/FritzingRotary.png)
 
 |    Rotary pin     | Arduino UNO/NANO/Mega2560/Leonardo board |
 | :---------------: | :--------------------------------------: |
@@ -83,13 +83,13 @@ Note that some ESP8266 pins mixes ESP8622 GPIO pins with Arduino digital pins. C
 ## Examples
 
 The following examples are available:
-* Rotary | Interrupt | [InterruptHalfStepBasic](https://github.com/Erriez/ErriezRotary/blob/master/examples/Interrupt/InterruptHalfStepBasic/InterruptHalfStepBasic.ino)
-* Rotary | Interrupt | [InterruptHalfStepButton](https://github.com/Erriez/ErriezRotary/blob/master/examples/Interrupt/InterruptHalfStepButton/InterruptHalfStepButton.ino)
-* Rotary | Interrupt | [InterruptHalfStepCounter](https://github.com/Erriez/ErriezRotary/blob/master/examples/Interrupt/InterruptHalfStepCounter/InterruptHalfStepCounter.ino)
-* Rotary | Polled | [PolledHalfStepBasic](https://github.com/Erriez/ErriezRotary/blob/master/examples/Polled/PolledHalfStepBasic/PolledHalfStepBasic.ino)
-* Rotary | Polled | [PolledHalfStepButton](https://github.com/Erriez/ErriezRotary/blob/master/examples/Polled/PolledHalfStepButton/PolledHalfStepButton.ino)
-* Rotary | Polled | [PolledHalfStepCounter](https://github.com/Erriez/ErriezRotary/blob/master/examples/Polled/PolledHalfStepCounter/PolledHalfStepCounter.ino)
-* Rotary | Polled | [PolledHalfStepMultiple](https://github.com/Erriez/ErriezRotary/blob/master/examples/Polled/PolledHalfStepMultiple/PolledHalfStepMultiple.ino)
+* Rotary | Interrupt | [InterruptHalfStepBasic](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/blob/master/examples/Interrupt/InterruptHalfStepBasic/InterruptHalfStepBasic.ino)
+* Rotary | Interrupt | [InterruptHalfStepButton](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/blob/master/examples/Interrupt/InterruptHalfStepButton/InterruptHalfStepButton.ino)
+* Rotary | Interrupt | [InterruptHalfStepCounter](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/blob/master/examples/Interrupt/InterruptHalfStepCounter/InterruptHalfStepCounter.ino)
+* Rotary | Polled | [PolledHalfStepBasic](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/blob/master/examples/Polled/PolledHalfStepBasic/PolledHalfStepBasic.ino)
+* Rotary | Polled | [PolledHalfStepButton](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/blob/master/examples/Polled/PolledHalfStepButton/PolledHalfStepButton.ino)
+* Rotary | Polled | [PolledHalfStepCounter](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/blob/master/examples/Polled/PolledHalfStepCounter/PolledHalfStepCounter.ino)
+* Rotary | Polled | [PolledHalfStepMultiple](https://github.com/Erriez/ErriezRotaryEncoderHalfStep/blob/master/examples/Polled/PolledHalfStepMultiple/PolledHalfStepMultiple.ino)
 
 
 ## Documentation
