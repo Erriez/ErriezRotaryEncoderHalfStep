@@ -58,7 +58,7 @@ void setup()
   while (!Serial) {
     ;
   }
-  Serial.println(F("Counter example polled half step Rotary Encoder"));
+  Serial.println(F("\nCounter example polled half step Rotary Encoder"));
 
   // Change sensitivity
   rotary.setSensitivity(125);

@@ -45,7 +45,7 @@ void setup()
   while (!Serial) {
     ;
   }
-  Serial.println(F("Basic example polled half step Rotary Encoder"));
+  Serial.println(F("\nBasic example polled half step Rotary Encoder"));
 }
 
 void loop()

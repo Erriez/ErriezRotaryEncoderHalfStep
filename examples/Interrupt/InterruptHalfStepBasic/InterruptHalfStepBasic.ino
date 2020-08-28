@@ -58,7 +58,7 @@ void setup()
   while (!Serial) {
     ;
   }
-  Serial.println(F("Basic example half step Rotary Encoder with interrupts"));
+  Serial.println(F("\nBasic example half step Rotary Encoder with interrupts"));
 
   // Initialize pin change interrupt on both rotary encoder pins
   attachInterrupt(digitalPinToInterrupt(ROTARY_PIN1), rotaryInterrupt, CHANGE);
